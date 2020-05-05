@@ -1,6 +1,6 @@
 # Carousel
 
-Impacta a tus clientes con este carrusel de productos para tu eCommerse.
+Impacta a tus clientes con este atractivo carrusel de productos para tu eCommerse.
 
 Esta diseñado por Darío Gijón Tapia alias Tipográfico | Brandmaker & Digital Designer de Chile.
 
