@@ -20,6 +20,13 @@
 <body>
     <!-- Insertar Aquí contenido -->
     <div class="contenedor">
+        <div class="titulo">
+            <div class="shape right-skew">
+                <i class="fas fa-laptop"></i>
+                <h2>Tecnología</h2>
+            </div>
+            <span class="txt-titulo">Mostrando 4 de 6 elementos</span>
+        </div>
         <div class="slider carousel">
             <div class="producto item">
                 <div class="contenedor-imagen">
@@ -48,13 +55,13 @@
             <div class="producto item">
                 <div class="contenedor-imagen">
                     <a href="#" class="link"></a>
-                    <img src="imagenes/gopro01.jpg">
-                    <img src="imagenes/gopro02.jpg" class="img-hover">
+                    <img src="imagenes/parlante01.jpg">
+                    <img src="imagenes/parlante02.jpg" class="img-hover">
                 </div>
                 <div class="datos">
                     <div class="starrr"></div>
-                    <small><a href="#">Gopro</a></small>
-                    <h3><a href="#">Gopro hero silver 7</a></h3>
+                    <small><a href="#">Sony</a></small>
+                    <h3><a href="#">PARLANTE SONY GTK-PG10</a></h3>
                     <small>SKU: 32383ee090pi</small>
                 </div>
                 <div class="precios">
@@ -72,13 +79,13 @@
             <div class="producto item">
                 <div class="contenedor-imagen">
                     <a href="#" class="link"></a>
-                    <img src="imagenes/gopro01.jpg">
-                    <img src="imagenes/gopro02.jpg" class="img-hover">
+                    <img src="imagenes/audifonos01.jpg">
+                    <img src="imagenes/audifonos02.jpg" class="img-hover">
                 </div>
                 <div class="datos">
                     <div class="starrr"></div>
-                    <small><a href="#">Gopro</a></small>
-                    <h3><a href="#">Gopro hero silver 7</a></h3>
+                    <small><a href="#">Tbl</a></small>
+                    <h3><a href="#">AUDIFONOS JBL T110 NEGRO</a></h3>
                     <small>SKU: 32383ee090pi</small>
                 </div>
                 <div class="precios">
@@ -96,13 +103,13 @@
             <div class="producto item">
                 <div class="contenedor-imagen">
                     <a href="#" class="link"></a>
-                    <img src="imagenes/gopro01.jpg">
-                    <img src="imagenes/gopro02.jpg" class="img-hover">
+                    <img src="imagenes/googlehome01.jpg">
+                    <img src="imagenes/googlehome02.jpg" class="img-hover">
                 </div>
                 <div class="datos">
                     <div class="starrr"></div>
-                    <small><a href="#">Gopro</a></small>
-                    <h3><a href="#">Gopro hero silver 7</a></h3>
+                    <small><a href="#">Google</a></small>
+                    <h3><a href="#">GOOGLE HOME MINI CARBON</a></h3>
                     <small>SKU: 32383ee090pi</small>
                 </div>
                 <div class="precios">
@@ -177,11 +184,7 @@
 <script src="js/starrr.js"></script>
 <script type="text/javascript">
     //Starrr
-    $('.starrr').starrr({
-        change: function(e, value) {
-            alert('Gracias por valorar este producto ')
-        }
-    })
+    $('.starrr').starrr({})
 
     $('.carousel').slick({
         dots: false,
@@ -195,16 +198,16 @@
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false
             }
         }, {
-            breakpoint: 700,
+            breakpoint: 800,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
         }, {
-            breakpoint: 400,
+            breakpoint: 600,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
