@@ -2,7 +2,7 @@
 
 Impacta a tus clientes con este atractivo carrusel de productos para tu eCommerse.
 
-Esta diseñado por Darío Gijón Tapia alias Tipográfico | Brandmaker & Digital Designer de Chile.
+Esta diseñado por Darío Gijón Tapia alias Tipográfico | Brandmaker & Digital Designer Chile.
 
 Las librerias utilizadas para este carrusel son: Slickslider, Fontawesome 5, Jquery, Starrr.js.
 
