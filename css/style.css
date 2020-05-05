@@ -1,7 +1,7 @@
 body{
 	font-family: 'montserrat', serif;
 	background: #f1f1f1;
-	margin: 0;
+	margin-top: 20px;
 	padding: 0;
 }
 *:focus {
@@ -9,16 +9,52 @@ body{
 }
 .contenedor{
 	max-width: 1200px;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
+	position: relative;
 }
-/*.owl-carousel .owl-item{
-	border-radius: 10px;
-	border: 1px solid #e2e2e2;
+.titulo{
+	border-bottom: 3px solid #9751ff;
 }
-.owl-carousel.owl-drag .owl-item{
-	padding: 0;
-}*/
+.titulo .shape{
+	background: #9751ff;
+    padding: 10px 20px;
+    max-width: 200px;
+    position: relative;
+}
+.right-skew:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  display: block;
+  width: 50px;
+  background: #9751ff;
+/* change background color to same as box   */
+  -webkit-transform: skew(-10deg);
+  -ms-transform: skew(-10deg);
+  transform: skew(20deg);
+}
+
+.titulo .shape h2, .titulo .shape i{
+	display: inline-block;
+	margin: 0;
+	color: #fff;
+}
+.titulo .shape i{
+	margin-right: 10px;
+	font-size: 20px;
+}
+.txt-titulo{
+	position: absolute;
+    right: 110px;
+    top: 15px;
+    font-size: 13px;
+    color: #605f5f;
+    font-weight: 600;
+}
 .producto{
 	width: 280px;
 	vertical-align: top;
@@ -63,8 +99,9 @@ body{
 .producto .datos h3 a{
 	text-decoration: none;
     color: #2b2b2b;
-    font-size: 20px;
+    font-size: 14px;
     display: block;
+    text-transform: uppercase;
 }
 .producto .datos h3 a:hover{
 	text-decoration: underline;
@@ -76,7 +113,7 @@ body{
     display: block;
     margin-top: 10px;
     color: #5a5a5a;
-    font-size: 13px;
+    font-size: 11px;
 }
 .producto .datos small{
 	font-size: 14px;
@@ -116,21 +153,18 @@ body{
     border-radius: 100px;
     color: #fff;
     text-decoration: none;
-    opacity: 0;
+    display: none;
     transition: all ease-in-out 0.3s;
 }
 .producto .btn-carrito:hover{
 	transform: scale(1.05);
 }
 .producto:hover .btn-carrito{
-	opacity: 1;
+	display: block;
 }
-
-
 .starrr {
- display: block; 
+ 	display: block; 
 }
-  
 .starrr a {
     font-size: 16px;
     padding: 0 1px;
@@ -138,4 +172,57 @@ body{
     color: #FFD119;
     text-decoration: none; 
 }
+.slider{
+	margin-top: 20px;
+}
+.slick-prev{
+	font-size: 0;
+    position: absolute;
+    right: 55px;
+    top: -64px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    background-image: url(../imagenes/prev-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    cursor: pointer;
+}
+.slick-next{
+	font-size: 0;
+    position: absolute;
+    right: 18px;
+    top: -64px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    background: url(../imagenes/next-arrow.png);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    cursor: pointer;
+}
+.slick-next:hover, .slick-prev:hover{
+	opacity: 0.8;
+}
 
+@media screen and (max-width: 650px){
+	.txt-titulo{
+		display: none;
+	}
+	.titulo .shape h2{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 400px){
+	.slick-next, .slick-prev{
+		display: none !important;
+	}
+	.titulo .shape{
+		padding: 10px 10px;
+    	max-width: 160px;
+    }
+}
